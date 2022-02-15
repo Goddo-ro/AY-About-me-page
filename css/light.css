@@ -1,0 +1,72 @@
+body {
+  color: #383838;
+}
+
+.about-left {
+  background-color: #383838;
+}
+
+.left-content > div, .icons a {
+  background-color: #ef6824;
+}
+
+.left-content h2 {
+  border-color: #383838;
+}
+
+.icons {
+  background-color: #383838;
+}
+
+.icons a {
+  color: #383838;
+}
+
+.icons a:hover {
+  background: #737373;
+}
+
+.about-right {
+  background-color: #CDCDCD;
+  color: #211f20;
+}
+
+.change-theme-label {
+  background-color: #999;
+}
+
+.fa-sun {
+  opacity: 100;
+}
+
+.fa-moon {
+  opacity: 0;
+}
+
+.skills-section {
+  background-repeat: no-repeat;
+  background: linear-gradient(10deg, #CDCDCD 0%, #CDCDCD 88%, #ef6824 88%, #ef6824 100%);
+  color: #211f20;
+}
+
+@media screen and (min-width: 600px) {
+  .skills-section {
+    background: linear-gradient(8deg, #CDCDCD 0%, #CDCDCD 85%, #ef6824 85%, #ef6824 100%);
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .skills-section {
+    background-repeat: no-repeat;
+    background: linear-gradient(8deg, #CDCDCD 0%, #CDCDCD 80%, #ef6824 80%, #ef6824 100%);
+    color: #211f20;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .skills-section {
+    background-repeat: no-repeat;
+    background: linear-gradient(5deg, #CDCDCD 0%, #CDCDCD 84%, #ef6824 84%, #ef6824 100%);
+    color: #211f20;
+  }
+}

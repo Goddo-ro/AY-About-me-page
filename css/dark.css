@@ -1,0 +1,69 @@
+body {
+  color: #211f20;
+}
+
+.about-left {
+  background-color: #211f20;
+}
+
+.left-content > div, .icons a {
+  background-color: #ef6824;
+}
+
+.left-content h2 {
+  border-color: #211f20;
+  color: #211f20;
+}
+
+.icons {
+  background-color: #60605e;
+}
+
+.icons a {
+  color: #211f20;
+}
+
+.icons a:hover {
+  background: #737373;
+}
+
+.about-right {
+  background-color: #383838;
+  color: #CDCDCD;
+}
+
+.change-theme-label {
+  background-color: #999;
+}
+
+.fa-sun {
+  opacity: 0;
+}
+
+.fa-moon {
+  opacity: 100;
+}
+
+.skills-section {
+  background-repeat: no-repeat;
+  background: linear-gradient(10deg, #383838 0%, #383838 88%, #ef6824 88%, #ef6824 100%);
+  color: #211f20;
+}
+
+.skills-section p, .skills-section h3 {
+  color: #CDCDCD;
+}
+
+@media screen and (min-width: 600px) {
+  .skills-section {
+    background: linear-gradient(8deg, #383838 0%, #383838 85%, #ef6824 85%, #ef6824 100%);
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .skills-section {
+    background-repeat: no-repeat;
+    background: linear-gradient(8deg, #383838 0%, #383838 80%, #ef6824 80%, #ef6824 100%);
+    color: #211f20;
+  }
+}

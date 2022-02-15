@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #303231;
+  margin-bottom: 0;
+}
+
+/* change theme  */
+
+.change-theme {
+  position: fixed;
+  right: .5rem;
+  top: 1rem;
+}
+
+.change-theme .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.change-theme-label {
+  border-radius: 42px;
+  padding: 5px;
+  height: 22px;
+  width: 22px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa-moon, .fa-sun {
+  position: absolute;
+}
+
+.fa-moon {
+  color: #E3E3E3;
+}
+
+.fa-sun {
+  color: #FFFD7E;
+}
+
+/* about me */
+
+.about-wrapper {
+  height: 100vh;
+  margin-bottom: 100vh;
+}
+
+/* left content */
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-content > div {
+  text-align: center;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+.left-content {
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+
+.avatar img {
+  display: block;
+  width: 200px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.left-content h2 {
+    font-size: 1.75rem;
+    margin-top: 2.2rem;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
+    letter-spacing: 1px;
+}
+
+.left-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-left: 0.6rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons a {
+  width: 40px;
+  height: 40px;
+  margin: 0 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* right content */
+
+.about-right {
+  min-height: 100vh;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-right h1 {
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+span {
+  color: #D94F17;
+}
+
+.about-right p {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+/* skills */
+
+.skills-section {
+  font-size: 1.25rem;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.skills-section > h1 {
+  text-align: right;
+  font-size: 2.5em;
+  margin-bottom: 4rem;
+}
+
+.skills-column {
+  max-width: 1600px;
+}
+
+.skills-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-skills {
+  margin-bottom: 3.5rem;
+}
+
+.about-skills > p {
+  font-size: 1.5em;
+}
+
+.progress-item {
+  text-align: left;
+}
+
+.progress-item > h3 {
+  margin-left: .75rem;
+}
+
+/* progress bars */
+
+.progress {
+  width: 100%;
+}
+
+.progress-bar {
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #d8d8d8;
+  position: relative;
+  height: 20px;
+  box-shadow: inset 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.progress-val {
+  background: linear-gradient(to right,
+    #ef6824, #60605e);
+  width: 20%;
+  height: inherit;
+  font-size: 1.25rem;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: width 1s ease .3s;
+}
+
+.progress-val > p {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity .5s ease .3s;
+}
+
+/* media */
+
+@media screen and (min-width: 1100px) {
+  .skills-content {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-bottom: 0;
+  }
+
+  .about-left {
+    position: relative;
+  }
+
+  .left-content {
+    position: absolute;
+    right: -50px;
+  }
+
+  .about-right {
+    padding: 0 5.35rem;
+  }
+
+  .right-content {
+    max-width: 1024px;
+  }
+
+  .skills-section {
+    display: block;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .skills-section > h1 {
+    font-size: 5rem;
+    top: 3rem;
+    right: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .skills-content {
+    margin-top: 7rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-skills {
+    margin-right: 4rem;
+    width: 55%;
+  }
+
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .progress {
+    width: 45%;
+  }
+
+  .progress-bar {
+    margin-bottom: 3.5em;
+  }
+}
