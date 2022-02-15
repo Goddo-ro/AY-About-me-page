@@ -7,9 +7,7 @@ const darkTheme = "css/dark.css";
 
 
 function changeTheme() {
-  console.log("123123");
   let currentTheme = linkToTheme.getAttribute("href");
-  let newTheme = "";
 
   if (currentTheme == lightTheme) {
     currentTheme = darkTheme;

@@ -46,7 +46,7 @@ body {
 
 .skills-section {
   background-repeat: no-repeat;
-  background: linear-gradient(10deg, #383838 0%, #383838 88%, #ef6824 88%, #ef6824 100%);
+  background: linear-gradient(6deg, #383838 0%, #383838 92%, #ef6824 92%, #ef6824 100%);
   color: #211f20;
 }
 
@@ -56,14 +56,22 @@ body {
 
 @media screen and (min-width: 600px) {
   .skills-section {
-    background: linear-gradient(8deg, #383838 0%, #383838 85%, #ef6824 85%, #ef6824 100%);
+    background: linear-gradient(5deg, #383838 0%, #383838 89%, #ef6824 89%, #ef6824 100%);
   }
 }
 
 @media screen and (min-width: 920px) {
   .skills-section {
     background-repeat: no-repeat;
-    background: linear-gradient(8deg, #383838 0%, #383838 80%, #ef6824 80%, #ef6824 100%);
+    background: linear-gradient(8deg, #383838 0%, #383838 84%, #ef6824 84%, #ef6824 100%);
+    color: #211f20;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .skills-section {
+    background-repeat: no-repeat;
+    background: linear-gradient(5deg, #383838 0%, #383838 84%, #ef6824 84%, #ef6824 100%);
     color: #211f20;
   }
 }
