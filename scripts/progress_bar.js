@@ -4,7 +4,8 @@ const observer = new IntersectionObserver(entries => {
       const progressVal = entry.target;
 
       const childP = Array.from(progressVal.children)[0];
-      const percents =  progressVal.getAttribute("percents") + '%';
+      const percents =  childP.innerHTML;
+      console.log(percents);
 
       progressVal.style.opacity = 1;
       progressVal.style.width = percents;
